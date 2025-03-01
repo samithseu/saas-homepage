@@ -1,6 +1,5 @@
 @import url(https://fonts.bunny.net/css?family=kantumruy-pro:400,700|roboto:300,500,700);
 @import "tailwindcss";
-
 @theme {
   --font-sans: "Roboto", "Kantumruy Pro";
   --font-roboto: "Roboto", sans-serif;
@@ -13,7 +12,18 @@
   --spacing-prefer: 1334px;
   --breakpoint-prefer: 1334px;
 }
-
+/* using local font */
+@font-face {
+  font-family: "MoulLight";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/KhmerOSMuollight.ttf") format("truetype");
+}
+/* smooth scroll animation for target  */
+:has(:target) {
+  @apply scroll-smooth scroll-pt-16 lg:scroll-pt-28;
+}
+/* utility classes */
 @utility small-highlight {
   @apply w-max text-primary bg-primary/5 border border-primary/10 rounded-full px-4 py-1 font-medium;
 }
@@ -28,14 +38,21 @@
   background-clip: text;
   text-fill-color: transparent;
 }
-
-@font-face {
-  font-family: "MoulLight";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/KhmerOSMuollight.ttf") format("truetype");
+h1,
+h2,
+h3,
+h4,
+div {
+  transform: translateY(10px);
+  opacity: 0;
+  transition: all 0.2s ease-out;
+  transition-delay: var(--delay, 0s);
 }
-
-:has(:target) {
-  @apply scroll-smooth scroll-pt-16 lg:scroll-pt-28;
+h1.scroll-show,
+h2.scroll-show,
+h3.scroll-show,
+h4.scroll-show,
+div.scroll-show {
+  transform: translateY(0);
+  opacity: 1;
 }
