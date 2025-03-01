@@ -37,5 +37,5 @@
 }
 
 :has(:target) {
-  @apply scroll-smooth scroll-pt-16 lg:scroll-pt-32;
+  @apply scroll-smooth scroll-pt-16 lg:scroll-pt-28;
 }
