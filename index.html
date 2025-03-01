@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a home page for our system - នេះគឺជា home page សម្រាប់ system របស់ពួកយើង"
+    />
+    <meta property="og:title" content="HomePage" />
+    <meta
+      property="og:description"
+      content="This is a home page for our system - នេះគឺជា home page សម្រាប់ system របស់ពួកយើង"
+    />
+    <meta
+      property="og:image"
+      content="https://images.pexels.com/photos/6894103/pexels-photo-6894103.jpeg?auto=compress&cs=tinysrgb&w=600"
+    />
+    <title>HomePage</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/2630/2630878.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="bg-light overflow-x-hidden">
+    <!-- header -->
+    <header class="sticky top-0 z-50 bg-white/60 backdrop-blur-lg">
+      <!-- header container -->
+      <nav
+        class="flex flex-col gap-4 md:flex-row md:justify-between max-w-prefer mx-auto px-4 py-6 md:px-4 prefer:px-0 transition-all duration-300"
+      >
+        <!-- logo -->
+        <div class="flex justify-between items-center md:w-max">
+          <a href="/" class="gradient-text text-2xl font-semibold">
+            HomePage
+          </a>
+          <svg
+            id="toggle"
+            xmlns="http://www.w3.org/2000/svg"
+            class="select-none size-6 md:hidden text-black transition-all duration-200 hover:text-secondary"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 6h18M3 12h18M3 18h18"
+            />
+          </svg>
+        </div>
+        <!-- navbar -->
+        <ul
+          id="navlink"
+          class="flex flex-col gap-2 border-t md:border-none border-gray-300 pt-4 md:p-0 items-center md:flex-row md:items-center md:gap-4 lg:gap-8 *:text-gray-600 *:font-semibold *:transition-all *:duration-200 *:hover:gradient-text *:text-[1rem]"
+        >
+          <li><a href="#features">លក្ខណៈពិសេស</a></li>
+          <li><a href="#testimonials">ការគាំទ្រ</a></li>
+          <li><a href="#">តម្លៃ</a></li>
+          <li><a href="#">ទំនាក់ទំនង</a></li>
+        </ul>
+        <!-- cta -->
+        <ul
+          id="cta"
+          class="flex flex-col items-center md:flex-row gap-6 *:text-gray-600 *:font-semibold *:transition-all *:duration-200 *:text-[1rem] pb-4 md:pb-0"
+        >
+          <li>
+            <a
+              href="#"
+              class="bg-transparent py-3 px-4 rounded transition-all duration-200 hover:bg-gray-200"
+              >ចូលគណនី</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white bg-primary py-3 px-4 rounded transition-all duration-200 hover:bg-primary/80"
+              >ប្រើប្រាស់ឥឡូវនេះ</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- hero section -->
+      <section class="mt-14">
+        <!-- hero container -->
+        <div
+          class="px-4 md:px-4 prefer:px-0 mx-auto max-w-prefer grid grid-cols-1 lg:grid-cols-2 items-center gap-4"
+        >
+          <!-- left side -->
+          <div class="flex flex-col gap-5 items-center lg:items-start">
+            <span class="small-highlight"> លំហូរនៃកិច្ចការរដ្ឋបាល </span>
+            <h2
+              class="lg:text-left text-3xl md:text-5xl font-bold w-3xl leading-10 md:leading-14 text-center"
+            >
+              សម្រួលរាល់កិច្ចការ <br />
+              <span class="gradient-text">រដ្ឋបាលរបស់សាលារៀន</span>
+            </h2>
+            <p
+              class="lg:text-left text-xl text-balance text-gray-600 text-center"
+            >
+              កាត់បន្ថយនូវការចំណាយពេលវេលាច្រើន លើកិច្ចការដ្ឋបាល
+              ធ្វើឱ្យការបង្រៀនកាន់តែមានរយៈពេលខ្លី។
+              អស់បារម្មណ៍ទៀតហើយជាមួយនឹងប្រព័ន្ធរបស់យើង!
+            </p>
+            <div
+              class="flex flex-col md:flex-row items-center gap-4 w-full md:w-max md:mx-auto lg:m-0"
+            >
+              <button
+                class="w-full md:w-max md:px-6 h-max flex justify-center items-center gap-1 bg-primary rounded-lg py-2 text-white font-bold cursor-pointer lg:hover:bg-primary/80 transition-all duration-200 shrink-0"
+              >
+                <span>ប្រើប្រាស់ឥឡូវនេះ</span>
+                <svg
+                  class="size-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="md:px-6 py-2 rounded-lg border border-primary/30 font-bold w-full md:w-max cursor-pointer bg-transparent lg:hover:bg-primary/10 transition-all duration-200 shrink-0"
+              >
+                កក់នូវសេវាកម្ម
+              </button>
+            </div>
+            <ul
+              class="flex flex-col items-start gap-2 mb-6 md:flex-row lg:gap-6"
+            >
+              <li
+                class="flex items-center gap-2 *:first:text-primary *:first:size-6"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m9.55 15.15l8.475-8.475q.3-.3.7-.3t.7.3t.3.713t-.3.712l-9.175 9.2q-.3.3-.7.3t-.7-.3L4.55 13q-.3-.3-.288-.712t.313-.713t.713-.3t.712.3z"
+                  />
+                </svg>
+                <span class="text-gray-700"> ងាយស្រួលប្រើប្រាស់ </span>
+              </li>
+              <li
+                class="flex items-center gap-2 *:first:text-primary *:first:size-6"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m9.55 15.15l8.475-8.475q.3-.3.7-.3t.7.3t.3.713t-.3.712l-9.175 9.2q-.3.3-.7.3t-.7-.3L4.55 13q-.3-.3-.288-.712t.313-.713t.713-.3t.712.3z"
+                  />
+                </svg>
+                <span class="text-gray-700"> មានការ support 24/7 </span>
+              </li>
+              <li
+                class="flex items-center gap-2 *:first:text-primary *:first:size-6"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m9.55 15.15l8.475-8.475q.3-.3.7-.3t.7.3t.3.713t-.3.712l-9.175 9.2q-.3.3-.7.3t-.7-.3L4.55 13q-.3-.3-.288-.712t.313-.713t.713-.3t.712.3z"
+                  />
+                </svg>
+                <span class="text-gray-700"> មានទំនុកចិត្ត </span>
+              </li>
+            </ul>
+          </div>
+          <!-- right side -->
+          <div
+            class="aspect-video overflow-hidden rounded-xl shadow-lg shadow-primary/15 md:w-[80%] md:mx-auto lg:w-full"
+          >
+            <img
+              class="object-cover w-full h-full saturate-[115%] transition-all duration-400 hover:scale-105"
+              src="/src/img/homepage-hero.jpg"
+              alt="Hero Image"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- features section -->
+      <section id="features" class="mt-36">
+        <!-- features container -->
+        <div
+          class="px-4 md:px-4 prefer:px-0 mx-auto max-w-prefer grid grid-cols-1 justify-items-center gap-5"
+        >
+          <span class="small-highlight">រាល់លក្ខណៈពិសេសរបស់ប្រព័ន្ធ</span>
+          <!-- feature title -->
+          <h2
+            class="text-black text-center text-xl font-bold text-balance md:text-3xl lg:w-[90%]"
+          >
+            រាល់កិច្ចការសម្រាប់ផ្នែកអប់រំទាំងឡាយគឺអាចដោះស្រាយបានជាមួយប្រព័ន្ធរបស់យើង
+          </h2>
+          <!-- feature subtitle -->
+          <h3 class="text-center text-gray-600 text-lg md:text-xl mb-8">
+            ចំណុចពិសេសខាងក្រោមនេះអាចធ្វើឱ្យអ្នកជ្រើសរើសយកពួកយើង៖
+          </h3>
+          <!-- all cards -->
+          <div
+            class="w-full h-max grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8"
+          >
+            <!-- each card -->
+            <div
+              class="card bg-white rounded-xl p-6 shadow lg:shadow-lg transition-all duration-200 hover:-translate-y-2"
+            >
+              <!-- card icon -->
+              <div
+                class="w-max h-max bg-primary/10 rounded-lg p-2 grid place-items-center mb-3 *:size-7 *:text-primary"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M2 5V3q0-.825.588-1.412T4 1h2q.425 0 .713.288T7 2t-.288.713T6 3H4v2q0 .425-.288.713T3 6t-.712-.288T2 5m18 0V3h-2q-.425 0-.712-.288T17 2t.288-.712T18 1h2q.825 0 1.413.588T22 3v2q0 .425-.288.713T21 6t-.712-.288T20 5M2 21v-2q0-.425.288-.712T3 18t.713.288T4 19v2h2q.425 0 .713.288T7 22t-.288.713T6 23H4q-.825 0-1.412-.587T2 21m18 2h-2q-.425 0-.712-.288T17 22t.288-.712T18 21h2v-2q0-.425.288-.712T21 18t.713.288T22 19v2q0 .825-.587 1.413T20 23M7 18h10V6H7zm0 2q-.825 0-1.412-.587T5 18V6q0-.825.588-1.412T7 4h10q.825 0 1.413.588T19 6v12q0 .825-.587 1.413T17 20zm3-10h4q.425 0 .713-.288T15 9t-.288-.712T14 8h-4q-.425 0-.712.288T9 9t.288.713T10 10m0 3h4q.425 0 .713-.288T15 12t-.288-.712T14 11h-4q-.425 0-.712.288T9 12t.288.713T10 13m0 3h4q.425 0 .713-.288T15 15t-.288-.712T14 14h-4q-.425 0-.712.288T9 15t.288.713T10 16m-3 2V6z"
+                  />
+                </svg>
+              </div>
+              <!-- card title -->
+              <h3
+                class="text-2xl text-black/80 font-semibold mb-2 line-clamp-1"
+              >
+                ឯកសារតាមបែបឌីជីថល
+              </h3>
+              <!-- card description -->
+              <p class="text-gray-600 text-lg line-clamp-3 font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut
+                itaque asperiores omnis voluptatem, dolorem adipisci? Cupiditate
+              </p>
+            </div>
+            <!-- each card -->
+            <div
+              class="card bg-white rounded-xl p-6 shadow lg:shadow-lg transition-all duration-200 hover:-translate-y-2"
+            >
+              <!-- card icon -->
+              <div
+                class="w-max h-max bg-primary/10 rounded-lg p-2 grid place-items-center mb-3 *:size-7 *:text-primary"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m10.95 13.7l-1.425-1.425q-.3-.3-.7-.3t-.7.3t-.3.713t.3.712l2.125 2.15q.3.3.7.3t.7-.3l4.25-4.25q.3-.3.3-.712t-.3-.713t-.712-.3t-.713.3zM12 22q-1.875 0-3.512-.712t-2.85-1.925t-1.925-2.85T3 13t.713-3.512t1.924-2.85t2.85-1.925T12 4t3.513.713t2.85 1.925t1.925 2.85T21 13t-.712 3.513t-1.925 2.85t-2.85 1.925T12 22M2.05 7.3q-.275-.275-.275-.7t.275-.7L4.9 3.05q.275-.275.7-.275t.7.275t.275.7t-.275.7L3.45 7.3q-.275.275-.7.275t-.7-.275m19.9 0q-.275.275-.7.275t-.7-.275L17.7 4.45q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l2.85 2.85q.275.275.275.7t-.275.7M12 20q2.925 0 4.963-2.037T19 13t-2.037-4.962T12 6T7.038 8.038T5 13t2.038 4.963T12 20"
+                  />
+                </svg>
+              </div>
+              <!-- card title -->
+              <h3
+                class="text-2xl text-black/80 font-semibold mb-2 line-clamp-1"
+              >
+                សន្សំសំចៃពេលវេលា
+              </h3>
+              <!-- card description -->
+              <p class="text-gray-600 text-lg line-clamp-3 font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut
+                itaque asperiores omnis voluptatem, dolorem adipisci? Cupiditate
+              </p>
+            </div>
+            <!-- each card -->
+            <div
+              class="card bg-white rounded-xl p-6 shadow lg:shadow-lg transition-all duration-200 hover:-translate-y-2"
+            >
+              <!-- card icon -->
+              <div
+                class="w-max h-max bg-primary/10 rounded-lg p-2 grid place-items-center mb-3 *:size-7 *:text-primary"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 48 48"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="4"
+                  >
+                    <path
+                      d="M6 9.256L24.009 4L42 9.256v10.778A26.32 26.32 0 0 1 24.003 45A26.32 26.32 0 0 1 6 20.029z"
+                    />
+                    <path stroke-linecap="round" d="m15 23l7 7l12-12" />
+                  </g>
+                </svg>
+              </div>
+              <!-- card title -->
+              <h3
+                class="text-2xl text-black/80 font-semibold mb-2 line-clamp-1"
+              >
+                ព័ត៌មានមានសុវត្ថិភាព
+              </h3>
+              <!-- card description -->
+              <p class="text-gray-600 text-lg line-clamp-3 font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut
+                itaque asperiores omnis voluptatem, dolorem adipisci? Cupiditate
+              </p>
+            </div>
+            <!-- each card -->
+            <div
+              class="card bg-white rounded-xl p-6 shadow lg:shadow-lg transition-all duration-200 hover:-translate-y-2"
+            >
+              <!-- card icon -->
+              <div
+                class="w-max h-max bg-primary/10 rounded-lg p-2 grid place-items-center mb-3 *:size-7 *:text-primary"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="4"
+                    d="M19 20a7 7 0 1 0 0-14a7 7 0 0 0 0 14M32.608 7A7 7 0 0 1 36 13a7 7 0 0 1-3.392 6M4 40.8V42h30v-1.2c0-4.48 0-6.72-.872-8.432a8 8 0 0 0-3.496-3.496C27.92 28 25.68 28 21.2 28h-4.4c-4.48 0-6.72 0-8.432.872a8 8 0 0 0-3.496 3.496C4 34.08 4 36.32 4 40.8M44 42v-1.2c0-4.48 0-6.72-.872-8.432a8 8 0 0 0-3.496-3.496"
+                  />
+                </svg>
+              </div>
+              <!-- card title -->
+              <h3
+                class="text-2xl text-black/80 font-semibold mb-2 line-clamp-1"
+              >
+                កំណត់អត្តសញ្ញាណត្រឹមត្រូវ
+              </h3>
+              <!-- card description -->
+              <p class="text-gray-600 text-lg line-clamp-3 font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut
+                itaque asperiores omnis voluptatem, dolorem adipisci? Cupiditate
+              </p>
+            </div>
+            <!-- each card -->
+            <div
+              class="card bg-white rounded-xl p-6 shadow lg:shadow-lg transition-all duration-200 hover:-translate-y-2"
+            >
+              <!-- card icon -->
+              <div
+                class="w-max h-max bg-primary/10 rounded-lg p-2 grid place-items-center mb-3 *:size-7 *:text-primary"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M21.92 6.62a1 1 0 0 0-.54-.54A1 1 0 0 0 21 6h-5a1 1 0 0 0 0 2h2.59L13 13.59l-3.29-3.3a1 1 0 0 0-1.42 0l-6 6a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L9 12.41l3.29 3.3a1 1 0 0 0 1.42 0L20 9.41V12a1 1 0 0 0 2 0V7a1 1 0 0 0-.08-.38"
+                  />
+                </svg>
+              </div>
+              <!-- card title -->
+              <h3
+                class="text-2xl text-black/80 font-semibold mb-2 line-clamp-1"
+              >
+                របាយការណ៍ងាយយល់
+              </h3>
+              <!-- card description -->
+              <p class="text-gray-600 text-lg line-clamp-3 font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut
+                itaque asperiores omnis voluptatem, dolorem adipisci? Cupiditate
+              </p>
+            </div>
+            <!-- each card -->
+            <div
+              class="card bg-white rounded-xl p-6 shadow lg:shadow-lg transition-all duration-200 hover:-translate-y-2"
+            >
+              <!-- card icon -->
+              <div
+                class="w-max h-max bg-primary/10 rounded-lg p-2 grid place-items-center mb-3 *:size-7 *:text-primary"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 48 48"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="4"
+                  >
+                    <path
+                      stroke-linejoin="round"
+                      d="M33 38H22v-8h14v-8h8v16h-5l-3 3z"
+                    />
+                    <path
+                      stroke-linejoin="round"
+                      d="M4 6h32v24H17l-4 4l-4-4H4z"
+                    />
+                    <path d="M19 18h1m6 0h1m-15 0h1" />
+                  </g>
+                </svg>
+              </div>
+              <!-- card title -->
+              <h3
+                class="text-2xl text-black/80 font-semibold mb-2 line-clamp-1"
+              >
+                ងាយស្រួលទំនាក់ទំនង
+              </h3>
+              <!-- card description -->
+              <p class="text-gray-600 text-lg line-clamp-3 font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut
+                itaque asperiores omnis voluptatem, dolorem adipisci? Cupiditate
+              </p>
+            </div>
+            <!-- each card -->
+            <div
+              class="card bg-white rounded-xl p-6 shadow lg:shadow-lg transition-all duration-200 hover:-translate-y-2"
+            >
+              <!-- card icon -->
+              <div
+                class="w-max h-max bg-primary/10 rounded-lg p-2 grid place-items-center mb-3 *:size-7 *:text-primary"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M5 22q-.825 0-1.412-.587T3 20V6q0-.825.588-1.412T5 4h1V3q0-.425.288-.712T7 2t.713.288T8 3v1h8V3q0-.425.288-.712T17 2t.713.288T18 3v1h1q.825 0 1.413.588T21 6v14q0 .825-.587 1.413T19 22zm0-2h14V10H5zM5 8h14V6H5zm0 0V6z"
+                  />
+                </svg>
+              </div>
+              <!-- card title -->
+              <h3
+                class="text-2xl text-black/80 font-semibold mb-2 line-clamp-1"
+              >
+                កំណត់កម្មវិធីសិក្សាប្រចាំឆ្នាំ
+              </h3>
+              <!-- card description -->
+              <p class="text-gray-600 text-lg line-clamp-3 font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut
+                itaque asperiores omnis voluptatem, dolorem adipisci? Cupiditate
+              </p>
+            </div>
+            <!-- each card -->
+            <div
+              class="card bg-white rounded-xl p-6 shadow lg:shadow-lg transition-all duration-200 hover:-translate-y-2"
+            >
+              <!-- card icon -->
+              <div
+                class="w-max h-max bg-primary/10 rounded-lg p-2 grid place-items-center mb-3 *:size-7 *:text-primary"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M10.825 22q-.675 0-1.162-.45t-.588-1.1L8.85 18.8q-.325-.125-.612-.3t-.563-.375l-1.55.65q-.625.275-1.25.05t-.975-.8l-1.175-2.05q-.35-.575-.2-1.225t.675-1.075l1.325-1Q4.5 12.5 4.5 12.337v-.675q0-.162.025-.337l-1.325-1Q2.675 9.9 2.525 9.25t.2-1.225L3.9 5.975q.35-.575.975-.8t1.25.05l1.55.65q.275-.2.575-.375t.6-.3l.225-1.65q.1-.65.588-1.1T10.825 2h2.35q.675 0 1.163.45t.587 1.1l.225 1.65q.325.125.613.3t.562.375l1.55-.65q.625-.275 1.25-.05t.975.8l1.175 2.05q.35.575.2 1.225t-.675 1.075l-1.325 1q.025.175.025.338v.674q0 .163-.05.338l1.325 1q.525.425.675 1.075t-.2 1.225l-1.2 2.05q-.35.575-.975.8t-1.25-.05l-1.5-.65q-.275.2-.575.375t-.6.3l-.225 1.65q-.1.65-.587 1.1t-1.163.45zM11 20h1.975l.35-2.65q.775-.2 1.438-.587t1.212-.938l2.475 1.025l.975-1.7l-2.15-1.625q.125-.35.175-.737T17.5 12t-.05-.787t-.175-.738l2.15-1.625l-.975-1.7l-2.475 1.05q-.55-.575-1.212-.962t-1.438-.588L13 4h-1.975l-.35 2.65q-.775.2-1.437.588t-1.213.937L5.55 7.15l-.975 1.7l2.15 1.6q-.125.375-.175.75t-.05.8q0 .4.05.775t.175.75l-2.15 1.625l.975 1.7l2.475-1.05q.55.575 1.213.963t1.437.587zm1.05-4.5q1.45 0 2.475-1.025T15.55 12t-1.025-2.475T12.05 8.5q-1.475 0-2.487 1.025T8.55 12t1.013 2.475T12.05 15.5M12 12"
+                  />
+                </svg>
+              </div>
+              <!-- card title -->
+              <h3
+                class="text-2xl text-black/80 font-semibold mb-2 line-clamp-1"
+              >
+                customize តាមតម្រូវការ
+              </h3>
+              <!-- card description -->
+              <p class="text-gray-600 text-lg line-clamp-3 font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut
+                itaque asperiores omnis voluptatem, dolorem adipisci? Cupiditate
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- testimonials section -->
+      <section id="testimonials" class="mt-16 bg-white py-16">
+        <!-- testimonials container -->
+        <div
+          class="px-4 md:px-4 prefer:px-0 mx-auto max-w-prefer grid grid-cols-1 justify-items-center gap-5"
+        >
+          <span class="small-highlight">រាល់ការគាំទ្រមកកាន់ពួកយើង</span>
+          <!-- title -->
+          <h2
+            class="text-black text-center text-xl font-bold text-balance md:text-3xl lg:w-[90%]"
+          >
+            ទំនុកចិត្តមកកាន់ សេវាកម្មរបស់យើង
+          </h2>
+          <!-- subtitle -->
+          <h3 class="text-center text-gray-600 text-lg md:text-xl mb-8">
+            ខាងក្រោមនេះគឺជាការគាំទ្ររបស់បុគ្គលិកអប់រំមកកាន់ប្រព័ន្ធរបស់ពួកយើង៖
+          </h3>
+          <!-- all cards -->
+          <div
+            class="w-full h-max grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8"
+          >
+            <!-- each card -->
+            <div
+              class="card bg-white rounded-xl p-6 border border-primary/30 transition-all duration-200 hover:-translate-y-2"
+            >
+              <!-- card icon -->
+              <div
+                class="w-max h-ma rounded-lg grid place-items-center mb-2 *:size-9 *:text-primary/40"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M7.17 17c.51 0 .98-.29 1.2-.74l1.42-2.84c.14-.28.21-.58.21-.89V8c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h2l-1.03 2.06c-.45.89.2 1.94 1.2 1.94m10 0c.51 0 .98-.29 1.2-.74l1.42-2.84c.14-.28.21-.58.21-.89V8c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h2l-1.03 2.06c-.45.89.2 1.94 1.2 1.94"
+                  />
+                </svg>
+              </div>
+              <!-- card description -->
+              <p class="text-gray-600 text-lg line-clamp-4 font-light">
+                ប្រព័ន្ធរបស់អ្នកគឺជាប្រព័ន្ធដែលខ្ញុំប្រើប្រាស់ហើយ
+                ពិតជាបានជួយសន្សំសំចៃពេលវេលាបានច្រើនមែនទែន។
+                សំខាន់គឺវាពិតជាអាចទុកចិត្តបានថែមទាំងមានល្បឿនលឿន។
+              </p>
+              <!-- card rate -->
+              <div
+                class="my-4 flex items-center gap-0.5 *:size-5 *:text-yellow-500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+              </div>
+              <!-- card rater -->
+              <h3 class="text-lg">
+                <span class="text-black font-semibold">លោកគ្រូ ICT</span> -
+                <span class="text-gray-600">វិទ្យាល័យកំពង់ស្ពឺ</span>
+              </h3>
+            </div>
+            <!-- each card -->
+            <div
+              class="card bg-white rounded-xl p-6 border border-primary/30 transition-all duration-200 hover:-translate-y-2"
+            >
+              <!-- card icon -->
+              <div
+                class="w-max h-ma rounded-lg grid place-items-center mb-2 *:size-9 *:text-primary/40"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M7.17 17c.51 0 .98-.29 1.2-.74l1.42-2.84c.14-.28.21-.58.21-.89V8c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h2l-1.03 2.06c-.45.89.2 1.94 1.2 1.94m10 0c.51 0 .98-.29 1.2-.74l1.42-2.84c.14-.28.21-.58.21-.89V8c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h2l-1.03 2.06c-.45.89.2 1.94 1.2 1.94"
+                  />
+                </svg>
+              </div>
+              <!-- card description -->
+              <p class="text-gray-600 text-lg line-clamp-4 font-light">
+                ប្រព័ន្ធរបស់អ្នកគឺជាប្រព័ន្ធដែលខ្ញុំប្រើប្រាស់ហើយ
+                ពិតជាបានជួយសន្សំសំចៃពេលវេលាបានច្រើនមែនទែន។
+                សំខាន់គឺវាពិតជាអាចទុកចិត្តបានថែមទាំងមានល្បឿនលឿន។
+              </p>
+              <!-- card rate -->
+              <div
+                class="my-4 flex items-center gap-0.5 *:size-5 *:text-yellow-500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+              </div>
+              <!-- card rater -->
+              <h3 class="text-lg">
+                <span class="text-black font-semibold">លោកគ្រូ គីមីវិទ្យា</span>
+                -
+                <span class="text-gray-600">វិទ្យាល័យជំពូវន្ត</span>
+              </h3>
+            </div>
+            <!-- each card -->
+            <div
+              class="card bg-white rounded-xl p-6 border border-primary/30 transition-all duration-200 hover:-translate-y-2"
+            >
+              <!-- card icon -->
+              <div
+                class="w-max h-ma rounded-lg grid place-items-center mb-2 *:size-9 *:text-primary/40"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M7.17 17c.51 0 .98-.29 1.2-.74l1.42-2.84c.14-.28.21-.58.21-.89V8c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h2l-1.03 2.06c-.45.89.2 1.94 1.2 1.94m10 0c.51 0 .98-.29 1.2-.74l1.42-2.84c.14-.28.21-.58.21-.89V8c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h2l-1.03 2.06c-.45.89.2 1.94 1.2 1.94"
+                  />
+                </svg>
+              </div>
+              <!-- card description -->
+              <p class="text-gray-600 text-lg line-clamp-4 font-light">
+                ប្រព័ន្ធរបស់អ្នកគឺជាប្រព័ន្ធដែលខ្ញុំប្រើប្រាស់ហើយ
+                ពិតជាបានជួយសន្សំសំចៃពេលវេលាបានច្រើនមែនទែន។
+                សំខាន់គឺវាពិតជាអាចទុកចិត្តបានថែមទាំងមានល្បឿនលឿន។
+              </p>
+              <!-- card rate -->
+              <div
+                class="my-4 flex items-center gap-0.5 *:size-5 *:text-yellow-500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                  />
+                </svg>
+              </div>
+              <!-- card rater -->
+              <h3 class="text-lg">
+                <span class="text-black font-semibold"
+                  >លោកគ្រូ ប្រវត្តិវិទ្យា</span
+                >
+                -
+                <span class="text-gray-600">វិទ្យាល័យចំបក់ </span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/src/js/index.js" type="module"></script>
+  </body>
+</html>
