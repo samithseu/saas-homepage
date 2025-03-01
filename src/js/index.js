@@ -35,7 +35,9 @@ window.addEventListener("scroll", () => {
   if (window.scrollY > 60) {
     headerNav.classList.remove("py-6");
     headerNav.classList.add("py-4");
+    headerNav.parentElement.classList.add("bg-white/60");
   } else {
     headerNav.classList.add("py-6");
+    headerNav.parentElement.classList.remove("bg-white/60");
   }
 });
