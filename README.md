@@ -1,6 +1,6 @@
 # SAAS Homepage
 
-This repo created to store the frontend homepage of this project <https://github.com/limvichet/schoolplatform>.
+This repo created to store the frontend homepage of a project related to school system.
 
 ## Technology
 - HTML
