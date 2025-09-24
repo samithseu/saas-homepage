@@ -7,52 +7,12 @@
   --font-moullight: "MoulLight";
   --color-light: #f9fafb;
   --color-dark: #020817;
-  --color-primary: #2463eb;
+  --color-primary: #f64838;
   --color-secondary: #5a5ffa;
-  --spacing-prefer: 1334px;
-  --breakpoint-prefer: 1334px;
-}
-/* using local font */
-@font-face {
-  font-family: "MoulLight";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/KhmerOSMuollight.ttf") format("truetype");
+  --spacing-public-prefer: 1334px;
+  --breakpoint-public-prefer: 1334px;
 }
 /* smooth scroll animation for target  */
 :has(:target) {
   @apply scroll-smooth scroll-pt-16 lg:scroll-pt-28;
-}
-/* utility classes */
-@utility small-highlight {
-  @apply w-max text-primary bg-primary/5 border border-primary/10 rounded-full px-4 py-1 font-medium;
-}
-@utility gradient-text {
-  background-image: linear-gradient(
-    to right,
-    var(--color-primary),
-    var(--color-secondary)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-h1,
-h2,
-h3,
-h4,
-div {
-  transform: translateY(10px);
-  opacity: 0;
-  transition: all 0.2s ease-out;
-  transition-delay: var(--delay, 0s);
-}
-h1.scroll-show,
-h2.scroll-show,
-h3.scroll-show,
-h4.scroll-show,
-div.scroll-show {
-  transform: translateY(0);
-  opacity: 1;
 }
